@@ -1,0 +1,118 @@
+<html>
+    <head><h2>Welcome to Metropolis Center</h2>
+    </head><br>
+
+    <body>
+        <h1>Thyroid Reccured Prediction</h1>
+        <form action={{url_for('predict')}} method="POST">
+            <label for="Age">Age :</label><br>
+            <input type="text" name="Age" id="Age"><br><br>
+            <label for="Gender">Gender</label><br>
+            <select name="Gender" id="Gender">
+                  <option value="0">Female</option>
+                <option value="1">Male</option></select><br><br>
+            <label for="Smoking">Smoking</label><br>
+            <select name="Smoking" id="Smoking">
+                <option value="0">No</option>
+             <option value="1">Yes</option>
+            </select><br><br>
+            <label for="Hx Smoking">history of Smoking</label><br>
+            <select name="Hx Smoking" id="Hx Smoking">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br><br>
+            <label for="Hx Radiothreapy">history of Radiothreapy</label><br>
+            <select name="Hx Radiothreapy" id="Hx Radiothreapy">
+                <option value="0">No</option>
+            <option value="1">Yes</option>
+            </select><br><br>
+            <label for="Thyroid Function">Thyroid Function</label><br>
+            <select name="Thyroid Function" id="Thyroid Function">
+                <option value="0">Euthyroid
+                </option>
+                <option value="1">Clinical Hyperthyroidism  </option>
+                <option value="2">Subclinical Hypothyroidism</option>
+                <option value="3">Clinical Hypothyroidism </option>
+                <option value="4">Subclinical Hyperthyroidism </option>
+            </select><br> <br> 
+            <label for="Physical Examination">Physical Examination</label><br>
+            <select name="Physical Examination" id="Physical Examination">
+                <option value="3">Normal </option>
+                <option value="0">Multinodular goiter </option>
+                <option value="1">Single nodular goiter-right </option>
+                <option value="2">Single nodular goiter-left</option>
+                <option value="4">Diffuse goiter </option>
+            </select><br><br>
+            <label for="Adenopathy">Adenopathy</label>
+            <select name="Adenopathy" id="Adenopathy">
+                <option value="0">No</option>
+                <option value="1">Right</option>
+                <option value="2">Bilateral</option>
+                <option value="3">Left</option>
+                <option value="4">Extensive</option>
+                <option value="5">Posterior</option>
+            </select><br>
+            <label for="Pathology">Pathology</label>
+            <select name="Pathology" id="Pathology">
+                <option value="0">Papillary</option>
+                <option value="1">Micropapillary</option>
+                <option value="2">Follicular</option>
+                <option value="3">Hurthel cell</option>
+            </select><br>
+            <label for="Focality">Focality</label>
+            <select name="Focality" id="Focality">
+                <option value="0">Uni-Focal</option>
+                <option value="1">Multi-Focal</option>
+            </select><br>
+            <label for="Risk">Risk</label><br>
+            <select name="Risk" id="Risk">
+                <option value="0">Low              </option>
+                <option value="1">Intermediate    </option>
+                <option value="2">High </option>
+            </select><br><br>
+            <label for="T">Tumor
+            </label><br>
+            <select name="T" id="T">
+                <option value="0">T2</option>
+                <option value="1">T3a</option>
+                <option value="2">T1a</option>
+                <option value="3">T1b</option>
+                <option value="4">T4a</option>
+                <option value="5">T3b</option>
+                <option value="6">T4b</option>
+            </select><br><br>
+            <label for="N">Lymph Node</label><br>
+            <select name="N" id="N">
+                <option value="0">N0</option>
+                <option value="1">N1b</option>
+                <option value="2">n1a</option>
+            </select><br><br>
+            <label for="M">Metastates</label><br>
+            <select name="M" id="M">
+                <option value="0">M0</option>
+                <option value="1">M1</option>
+            </select><br><br>
+            <label for="Stage">Stage</label><br>
+            <select name="Stage" id="Stage">
+                <option value="0">I</option>
+                <option value="1">II</option>
+                <option value="2">IVB </option>
+                <option value="3">III</option>
+                <option value="4">IVA</option>
+            </select><br><br>
+            <label for="Response">Response</label><br>
+            <select name="Response" id="Response">
+                <option value="0">Excellent</option>
+                <option value="1">Structural Incomplete </option>
+                <option value="2">Indeterminate</option>
+                <option value="3">Biochemical Incomplete</option>
+            </select><br><br>
+            <button>predict</button>
+        </form>
+        
+
+
+   
+
+    </body>
+</html>
